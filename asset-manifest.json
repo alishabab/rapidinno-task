@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/rapidinno-task/static/css/main.4a82a7f5.chunk.css",
-    "main.js": "/rapidinno-task/static/js/main.c900f6d4.chunk.js",
-    "main.js.map": "/rapidinno-task/static/js/main.c900f6d4.chunk.js.map",
+    "main.js": "/rapidinno-task/static/js/main.d2cd27ce.chunk.js",
+    "main.js.map": "/rapidinno-task/static/js/main.d2cd27ce.chunk.js.map",
     "runtime-main.js": "/rapidinno-task/static/js/runtime-main.ee83ac91.js",
     "runtime-main.js.map": "/rapidinno-task/static/js/runtime-main.ee83ac91.js.map",
     "static/js/2.b38683b1.chunk.js": "/rapidinno-task/static/js/2.b38683b1.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.ee83ac91.js",
     "static/js/2.b38683b1.chunk.js",
     "static/css/main.4a82a7f5.chunk.css",
-    "static/js/main.c900f6d4.chunk.js"
+    "static/js/main.d2cd27ce.chunk.js"
   ]
 }
