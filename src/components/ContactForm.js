@@ -7,10 +7,16 @@ const ContactForm = () => {
   const [phone, setPhone] = useState('');
   const [address, setAddress] = useState('');
   const [users, setUsers] = useState([]);
+  const [error, setError] = useState(false);
 
   const handleSubmit = e => {
     e.preventDefault();
+    if (name.length < 1 || email.length < 1 || phone.length < 1 || address.length < 1) {
+      setError(true);
+      return;
+    }
     const user = {
+      id: email,
       name,
       email,
       phone,
@@ -18,6 +24,7 @@ const ContactForm = () => {
         city: address,
       },
     };
+    setError(false);
     setUsers([...users, user]);
     setName('');
     setEmail('');
@@ -26,8 +33,9 @@ const ContactForm = () => {
   };
 
   return (
-    <div>
+    <div className="container">
       <h1 className="text-center"> Contact </h1>
+      { error && <p className="text-danger text-center"> All fields required </p>}
       <form className="form" onSubmit={handleSubmit}>
         <label htmlFor="name">
           First Name
@@ -47,6 +55,7 @@ const ContactForm = () => {
         </label>
         <input type="submit" value="Submit" />
       </form>
+      <br />
       { users.length > 0 && <UsersTable users={users} /> }
     </div>
   );

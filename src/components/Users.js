@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { useEffect, useState } from 'react';
 import UsersTable from './UsersTable';
 import UserService from '../services/user.service';
@@ -14,12 +13,13 @@ const Users = () => {
       setUsers(data);
     } catch (err) {
       setLoading(false);
+      // eslint-disable-next-line no-console
       console.log(err);
     }
   }, []);
 
   return (
-    <div className="text-center">
+    <div className="text-center container">
       <h1>Users</h1>
       { loading && <p> loading.. </p>}
       { users && <UsersTable users={users} />}

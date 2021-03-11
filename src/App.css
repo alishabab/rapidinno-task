@@ -1,3 +1,7 @@
+h1 {
+  margin: 0;
+}
+
 input[type=text] {
   width: 100%;
   padding: 12px 20px;
@@ -40,12 +44,77 @@ tr:nth-child(even) {
   background-color: #ddd;
 }
 
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-danger {
+  color: red;
+}
+
+.text-highlight {
+  color: rgb(72, 72, 240);
+}
+
+.text-secondry {
+  color: gray;
+}
+
+.hero {
+  margin: 50px 0;
+}
+
+.btn {
+  margin-right: 7px;
+  padding: 10px 7px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: rgb(72, 72, 240);
+  color: white;
+}
+
+.btn-secondry {
+  background-color: lightgray;
+  color: rgb(72, 72, 240);
+}
+
+.banner-info {
+  margin-bottom: 50px;
+}
+
+.banner-img img {
+  width: 100%;
 }
 
 .form {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+}
+
+@media (min-width: 600px) {
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .banner-info {
+    width: 40vw;
+  }
+
+  .banner-img img {
+    max-width: 50vw;
+    max-height: 250px;
+  }
 }
