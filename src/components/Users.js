@@ -1,5 +1,6 @@
 /* eslint-disable no-console */
 import { useEffect, useState } from 'react';
+import UsersTable from './UsersTable';
 import UserService from '../services/user.service';
 
 const Users = () => {
@@ -21,26 +22,7 @@ const Users = () => {
     <div className="text-center">
       <h1>Users</h1>
       { loading && <p> loading.. </p>}
-      <table>
-        <tbody>
-          <tr>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Address</th>
-          </tr>
-          { users && users.map(user => (
-            <tr key={user.id}>
-              <td>{user.name}</td>
-              <td>{user.email}</td>
-              <td>
-                {user.address.street}
-                ,
-                {user.address.city}
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      { users && <UsersTable users={users} />}
     </div>
   );
 };
