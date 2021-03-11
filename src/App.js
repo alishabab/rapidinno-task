@@ -13,7 +13,7 @@ function App() {
       </header>
       <main>
         <Switch>
-          <Route path="/" component={Home} exact />
+          <Route path={['/', '/rapidinno-task']} component={Home} exact />
           <Route path="/users" component={Users} />
           <Route path="/contact" component={ContactForm} />
         </Switch>
