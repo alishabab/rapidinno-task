@@ -1,5 +1,20 @@
-h1 {
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+li {
   margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 input[type=text] {
@@ -14,7 +29,7 @@ input[type=text] {
 
 input[type=submit] {
   width: 100%;
-  background-color: #4caf50;
+  background-color: rgb(72, 72, 240);
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -28,7 +43,6 @@ input[type=submit]:hover {
 }
 
 table {
-  font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
@@ -41,12 +55,38 @@ th {
 }
 
 tr:nth-child(even) {
-  background-color: #ddd;
+  background-color: rgb(72, 72, 240, 0.9);
+  color: white;
 }
 
 .container {
   width: 95%;
   margin: 0 auto;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.navbar {
+  width: 95%;
+  padding: 20px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.nav-link {
+  color: rgb(49, 44, 121);
+}
+
+.nav-link:hover {
+  color: rgb(45, 31, 238);
 }
 
 .text-center {
@@ -96,10 +136,24 @@ tr:nth-child(even) {
   width: 100%;
 }
 
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+
 .form {
   border-radius: 5px;
-  background-color: #f2f2f2;
   padding: 20px;
+}
+
+.icon {
+  font-size: 28px;
+}
+
+.icon-primary {
+  color: rgb(72, 72, 240);
 }
 
 @media (min-width: 600px) {
@@ -116,5 +170,9 @@ tr:nth-child(even) {
   .banner-img img {
     max-width: 50vw;
     max-height: 250px;
+  }
+
+  .specialization {
+    display: flex;
   }
 }

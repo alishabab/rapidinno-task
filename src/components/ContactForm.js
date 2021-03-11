@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import UsersTable from './UsersTable';
+import { UsersTable } from './UsersTable';
 
-const ContactForm = () => {
+export const ContactForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
@@ -38,7 +38,7 @@ const ContactForm = () => {
       { error && <p className="text-danger text-center"> All fields required </p>}
       <form className="form" onSubmit={handleSubmit}>
         <label htmlFor="name">
-          First Name
+          Name
           <input type="text" id="name" value={name} placeholder="Your name.." onChange={e => setName(e.target.value)} />
         </label>
         <label htmlFor="email">
@@ -60,5 +60,3 @@ const ContactForm = () => {
     </div>
   );
 };
-
-export default ContactForm;
