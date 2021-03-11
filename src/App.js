@@ -14,8 +14,8 @@ function App() {
       <main>
         <Switch>
           <Route path={['/', '/rapidinno-task']} component={Home} exact />
-          <Route path="/users" component={Users} />
-          <Route path="/contact" component={ContactForm} />
+          <Route path="/rapidinno-task/users" component={Users} />
+          <Route path="/rapidinno-task/contact" component={ContactForm} />
         </Switch>
       </main>
     </>
