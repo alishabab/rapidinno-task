@@ -76,5 +76,63 @@ export const Home = () => (
         </span>
       </section>
     </div>
+    <section className="resources">
+      <div className="container resources-container">
+        <div className="sample-form-container">
+          <div className="sample-form-img">
+            <img src="https://images.all-free-download.com/images/graphicthumb/creative_office_working_design_vector_set_548729.jpg" alt="office" />
+          </div>
+          <form className="sample-form">
+            <label htmlFor="name">
+              Name
+              <input type="text" name="name" />
+            </label>
+            <label htmlFor="email">
+              Email
+              <input type="text" name="email" />
+            </label>
+            <label htmlFor="password">
+              Password
+              <input type="text" name="password" />
+            </label>
+            <button type="button" className="btn btn-ternary">Submit</button>
+          </form>
+        </div>
+        <div className="resources-info">
+          <h2>
+            The most useful resource
+            <br />
+            <span className="text-ternary">
+              ever created for dev|
+            </span>
+          </h2>
+          <p className="text-secondry">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae culpa facilis error!
+            Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.
+          </p>
+          <span className="text-ternary resource-type">
+            <i className="fas fa-check check-icon" />
+            &nbsp;
+            Lifetime updates
+          </span>
+          <span className="text-ternary resource-type">
+            <i className="fas fa-check check-icon" />
+            &nbsp;
+            Tech support
+          </span>
+          <br />
+          <span className="text-ternary resource-type">
+            <i className="fas fa-check check-icon" />
+            &nbsp;
+            Lifetime updates
+          </span>
+          <span className="text-ternary resource-type">
+            <i className="fas fa-check check-icon" />
+            &nbsp;
+            Tech support
+          </span>
+        </div>
+      </div>
+    </section>
   </div>
 );
