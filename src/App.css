@@ -39,7 +39,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: rgb(45, 31, 238);
 }
 
 table {
@@ -105,6 +105,10 @@ tr:nth-child(even) {
   color: gray;
 }
 
+.text-ternary {
+  color: rgb(24, 80, 13);
+}
+
 .hero {
   margin: 50px 0;
 }
@@ -128,6 +132,12 @@ tr:nth-child(even) {
   color: rgb(72, 72, 240);
 }
 
+.btn-ternary {
+  width: 100%;
+  background-color: rgb(24, 80, 13);
+  color: white;
+}
+
 .banner-info {
   margin-bottom: 50px;
 }
@@ -143,6 +153,32 @@ tr:nth-child(even) {
   margin: 30px 0;
 }
 
+.resources {
+  background-color: rgba(211, 211, 211, 0.5);
+}
+
+.resources-info {
+  margin-top: 30px;
+}
+
+.resource-type {
+  display: inline-block;
+  margin: 15px;
+}
+
+.sample-form-container {
+  padding-top: 40px;
+}
+
+.sample-form-img img {
+  width: 100%;
+}
+
+.sample-form {
+  background-color: white;
+  padding: 20px;
+}
+
 .form {
   border-radius: 5px;
   padding: 20px;
@@ -154,6 +190,13 @@ tr:nth-child(even) {
 
 .icon-primary {
   color: rgb(72, 72, 240);
+}
+
+.check-icon {
+  padding: 5px;
+  border-radius: 50%;
+  background-color: aquamarine;
+  color: rgb(24, 80, 13);
 }
 
 @media (min-width: 600px) {
@@ -174,5 +217,23 @@ tr:nth-child(even) {
 
   .specialization {
     display: flex;
+  }
+
+  .resources-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sample-form-container {
+    width: 40%;
+  }
+
+  .resources-info {
+    width: 40%;
+  }
+
+  .sample-form-img img {
+    height: 250px;
   }
 }
